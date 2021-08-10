@@ -8,5 +8,10 @@ export function createCourser(request: Request, response: Response) {
     duration: 10
   })
 
+  CreateCourseService.execute({
+    name: 'NodeJS',
+    educator: 'Tarcio'
+  })
+
   return response.send()
 }
